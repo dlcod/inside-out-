@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈화면</title>
+    <style>
+     
+        
+        
+        h1 {
+          font-family:fantasy;
+          margin: 0;
+          padding: 0;
+        }
+        header {
+          background-color:white;
+          color: black ;
+          padding: 20px;
+          text-align: center;
+        }
+        main {
+          padding: 20px;
+        }
+
+        nav {
+      background-color: #555;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      
+    }
+    nav a {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+        .movie-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-top: 20px;
+        }
+        .movie-card {
+          width: 300px;
+          margin: 20px;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          transition: 0.3s;
+        }
+        .movie-card:hover {
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+        .movie-image {
+          width: 100%;
+          height: 400px;
+          object-fit: cover;
+        }
+        .movie-info {
+          padding: 20px;
+        }
+
+        @media (max-width: 480px) {
+          .movie-card {
+            width: 150px;
+            margin: 5px;
+          }
+          .movie-image {
+            height: 200px;
+          }
+        }
+      </style>
+</head>
+<body>
+    <header>
+        <h1>INSIDE  OUT  2</h1>
+      </header>
+      
+      <nav>
+        <a href="wed.html">홈</a>
+        <a href="영화소개.html">영화 소개</a>
+        <a href="캐릭터 소개.html">캐릭터 소개</a>
+        <a href="이벤트.html">이벤트</a>
+      </nav>
+      <main>
+        
+        <div class="movie-container">
+          <div class="movie-card">
+            <img src="main poster.jpg" alt="Movie 1" class="movie-image">
+            <div class="movie-info">
+              <h3> MAIN POSTER 1 </h3>
+              
+            </div>
+          </div>
+          <div class="movie-card">
+            <img src="main poster 2.jpg" alt="Movie 2" class="movie-image">
+            <div class="movie-info">
+              <h3>MAIN POSTER 2</h3>
+              
+            </div>
+          </div>
+          <div class="movie-card">
+            <img src="main poster 3.jpg" alt="Movie 3" class="movie-image">
+            <div class="movie-info">
+              <h3>MAIN POSTER 3</h3>
+              
+            </div>
+          </div>
+        </div>
+      </main>
+</body>
+</html>
