@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>캐릭터 소개</title>
+    <style>
+        h1 {
+            font-family:fantasy;
+            margin: 0;
+            padding: 0;
+          }
+          header {
+            background-color:white;
+          color: black ;
+            padding: 20px;
+            text-align: center;
+          }
+          nav {
+          background-color: #555;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          
+        }
+        nav a {
+          float: left;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+    
+        nav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        .character-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .character-card {
+            text-align: center;
+            margin: 0 20px;
+            
+        }
+        .character-card img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        
+        .character-card h3 {
+            margin-top: 10px;
+        }
+
+
+        @media (max-width: 768px) {
+            .character-card {
+                margin: 10px;
+            }
+            .character-card img {
+                width: 120px;
+                height: 120px;
+            }
+            .character-card h3 {
+                font-size: 1rem;
+            }
+            .character-card p {
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .character-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .character-card {
+                max-width: 300px;
+            }
+            .character-card img {
+                width: 150px;
+                height: 150px;
+            }
+            .character-card h3 {
+                font-size: 1.2rem;
+            }
+            .character-card p {
+                font-size: 1rem;
+            }
+        }
+
+      
+        </style>
+</head>
+<body>
+    <header>
+        <h1>INSIDE  OUT  2</h1>
+      </header>
+      
+      <nav>
+        <a href="wed.html">홈</a>
+        <a href="영화소개.html">영화 소개</a>
+        <a href="캐릭터 소개.html">캐릭터 소개</a>
+        <a href="이벤트.html">이벤트</a>
+      </nav>
+
+      <div class="character-container">
+        <div class="character-card">
+            <img src="joy.png" alt="Joy">
+            <h3>기쁨 (Joy)</h3>
+            <p>라일리의 마음속에서 가장 밝고 긍정적인 존재입니다.  <br>
+                기쁨이는 라일리의 좋은 추억들을 만들기 위해 끊임없이 활동합니다.</p>
+        </div>
+       
+        <div class="character-card">
+            <img src="sad.png" alt="Sadness">
+            <h3>슬픔 (Sadness)</h3>
+            <p>슬픔이는 라일리가 자신의 감정을 이해하고 <br>
+                타인과 깊은 연결을 맺는 데 중요한 역할을 해줍니다.
+            </p>
+        </div>
+        <div class="character-card">
+            <img src="fear.png" alt="Fear">
+            <h3>소심 (Fear)</h3>
+            <p>라일리의 감정 중 하나로, 위험을 감지하고 안전을 추구합니다.</p>
+        </div>
+    </div>
+
+    <div class="character-container">
+        <div class="character-card">
+            <img src="angry.png" alt="Anger">
+            <h3>버럭 (Anger)</h3>
+            <p>라일리가 불공평하거나 잘못된 상황에 처했을 때 나타나는 감정입니다. <br>
+                </p>
+        </div>
+        <div class="character-card">
+            <img src="dis.png" alt="Disgust">
+            <h3>까칠 (Disgust)</h3>
+            <p>라일리의 감정 중 하나로, 나쁜 것을 거부하고 싫어하는 감정을 표현합니다.</p>
+        </div>
+        <div class="character-card">
+            <img src="bulan.jpeg" alt="Jealousy">
+            <h3>불안 (Anxiety)</h3>
+            <p>새로 등장한 감정 중 하나로, 타인과 비교하며 자신의 가치를 인정받고자 하는 감정을 표현합니다.</p>
+        </div>
+    </div>
+</body>
+</html>

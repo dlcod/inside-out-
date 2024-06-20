@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화소개</title>
+    <style>
+    h1 {
+        font-family:fantasy;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color:white;
+          color: black ;
+        padding: 20px;
+        text-align: center;
+      }
+      nav {
+      background-color: #555;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      
+    }
+    nav a {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .movie-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .movie-poster {
+        max-width: 600px;
+        width: 100%;
+    }
+    .movie-synopsis {
+        max-width: 800px;
+        width: 90%;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    @media (max-width: 768px) {
+        .movie-poster {
+            max-width: 400px;
+        }
+        .movie-synopsis {
+            width: 95%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .movie-poster {
+            max-width: 300px;
+        }
+        .movie-synopsis {
+            width: 98%;
+        }
+    }
+
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1>INSIDE  OUT  2</h1>
+      </header>
+
+     
+      
+      <nav>
+        <a href="wed.html">홈</a>
+        <a href="영화소개.html">영화 소개</a>
+        <a href="캐릭터 소개.html">캐릭터 소개</a>
+        <a href="이벤트.html">이벤트</a>
+      </nav>
+
+      <div class="movie-container">
+        <img src="poster.jpg" alt="Inside Out 2 Poster" class="movie-poster">
+        <div class="movie-synopsis">
+            
+            <p><h2>디즈니·픽사의 대표작 <인사이드 아웃>
+                새로운 감정과 함께 돌아오다!</h2></b>
+                <br>
+                13살이 된 라일리의 행복을 위해 매일 바쁘게 머릿속 감정 컨트롤 본부를 운영하는<br>
+                ‘기쁨’, ‘슬픔’, ‘버럭’, ‘까칠’, ‘소심’.<br>
+                <br>
+                그러던 어느 날,<br>
+                낯선 감정인 ‘불안’, ‘당황’, ‘따분’, ‘부럽’이가 본부에 등장하고,<br>
+                언제나 최악의 상황을 대비하며 제멋대로인 ‘불안’이와 기존 감정들은 계속 충돌한다.<br>
+                <br>
+                결국 새로운 감정들에 의해 본부에서 쫓겨나게 된 기존 감정들은<br>
+                다시 본부로 돌아가기 위해 위험천만한 모험을 시작하는데…<br>
+                <br>
+                2024년, 전 세계를 공감으로 물들인 유쾌한 상상이 다시 시작된다!</p>
+        </div>
+    </div>
+
+  
+</body>
+</html>
